@@ -1,5 +1,6 @@
 const pkg = require("../package.json");
 const axios = require("axios");
+const { PREFIX, BOTNAME } = require("../config.json");
 
 module.exports = async (client) => {
   const version = pkg.version;
@@ -9,7 +10,7 @@ module.exports = async (client) => {
   const guilds = client.guilds.cache.size;
 
   console.log(
-    `${client.user.username} Preparing to playing with ${users} users, in ${channels} channels of ${guilds} guilds...`
+    `${client.user.username} Preparing to serve ${users} users, in ${channels} channels, on ${guilds} guilds...`
   );
 
   client.setInterval(async () => {
@@ -18,11 +19,11 @@ module.exports = async (client) => {
 
     let status = [
       `with ${userFormat} users`,
-      `Bot v${version}`,
+      `${BOTNAME} v${version}`,
       `in ${guildFormat} server 🎉`,
-      "Help me to buy a VPS, please | nh donate",
+      //`Help me buy a VPS, please | ${prefix}donate`,
       "Ara ara ara",
-      "now with downloader | nh dl 177013",
+      `with downloader | ${PREFIX}dl 177013`,
     ];
     let rand = client.util.getRandInt(status.length);
 

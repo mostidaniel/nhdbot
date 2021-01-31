@@ -1,7 +1,9 @@
 {
   "TOKEN": "BOT_TOKEN_HERE",
-  "PREFIX": "nhen",
+  "PREFIX": "nhd!",
   "COLOR": "#DD474D",
   "OWNERS": ["YOUR_USER_ID"],
-  "LANG": ["english", "chinese", "japanese"]
+  "LANG": ["english", "chinese", "japanese"],
+  "BOTNAME": "nHDBot",
+  "SERVER_INV": "wm6V3cT"
 }

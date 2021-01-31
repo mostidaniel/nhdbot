@@ -1,6 +1,6 @@
 {
-  "name": "nana-bot",
-  "version": "2.10.0",
+  "name": "nhdbot",
+  "version": "NANA-OLD 2.10.0",
   "description": "Search, read, and download doujin book directly from your discord channel",
   "main": "app.js",
   "scripts": {
@@ -21,12 +21,12 @@
   "author": "Rin <masami45@tuta.io>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/masami45/Nana.git"
+    "url": "git+https://github.com/mostidaniel/nhdbot"
   },
   "bugs": {
-    "url": "https://github.com/masami45/Nana/issues"
+    "url": "https://github.com/mostidaniel/nhdbot/issues"
   },
-  "homepage": "https://github.com/masami45/Nana/#readme",
+  "homepage": "https://github.com/mostidaniel/nhdbot/#readme",
   "license": "MIT",
   "keywords": [
     "node",

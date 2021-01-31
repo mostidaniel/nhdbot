@@ -23,5 +23,5 @@ exports.conf = {
 exports.help = {
   name: "ping",
   description: "Ping the bot to see if there are latecny issues.",
-  usage: "{prefix}ping"
+  usage: `ping`
 };

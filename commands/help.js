@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const { PREFIX, BOTNAME, SERVER_INV } = require("../config.json");
 
 exports.run = async (client, msg, args, color) => {
   const app = await client.fetchApplication();
@@ -6,26 +7,26 @@ exports.run = async (client, msg, args, color) => {
   if (!args[0]) {
     const embed = new MessageEmbed()
       .setColor(color)
-      .setTitle("Nana helps")
+      .setTitle(BOTNAME+" Help Page")
       .setDescription(
-        `Nana help you to directly read doujinshi on nHentai from your Discord channel, you can invite me with [This Link](https://nana.masami.xyz/invite) or [Join my Server](https://nana.masami.xyz/server) (my Owner need suggestion for next update!)`
+        BOTNAME+` can help you to directly read doujinshi on nHentai from your Discord channel, you can invite me with [This Link](https://discordapp.com/oauth2/authorize?client_id=805014850878963725&scope=bot&permissions=8) or [Join my Server](https://discord.gg/${SERVER_INV})`
       )
       .addField(
         "Command list",
-        `- nh random -- Get random doujinshi
-- nh read \`<ID>\` -- Read doujinshi by the Id you provided
-- nh lang \`<english/japanese/chinese>\` -- Get random doujinshi by the language you provided. You can use alias language too.\nExample: \`<ch/en/jp>\`
-- nh download \`<Book ID>\` -- Download doujin in zip file
-- nh favorite \`[add/delete]\` \`<ID>\` (no args to see the list) -- Save your favorite doujin ID
-- nh parody \`<Parody> [Language]\` -- Get random doujinshi by parody you provided
-- nh tag \`<Tag> [Language]\` -- Get random doujinshi by tag you provided
-- nh search \`<Query> [Language]\` -- Search nHentai site
-- nh donate -- Showing donate page`
+        `- ${PREFIX}random -- Get random doujinshi
+- ${PREFIX}read \`<ID>\` -- Read doujinshi by the Id you provided
+- ${PREFIX}lang \`<english/japanese/chinese>\` -- Get random doujinshi by the language you provided. You can use alias language too.\nExample: \`<ch/en/jp>\`
+- ${PREFIX}download \`<Book ID>\` -- Download doujin in zip file
+- ${PREFIX}favorite \`[add/delete]\` \`<ID>\` (no args to see the list) -- Save your favorite doujin ID
+- ${PREFIX}parody \`<Parody> [Language]\` -- Get random doujinshi by parody you provided
+- ${PREFIX}tag \`<Tag> [Language]\` -- Get random doujinshi by tag you provided
+- ${PREFIX}search \`<Query> [Language]\` -- Search nHentai site
+- ${PREFIX}donate -- Showing donate page`
       )
       .setFooter(`Nana V${client.version} || <> = required, [] = optional`)
       .addField(
         "Changelogs",
-        `- **BANNED** some tag, so you can't read it again from me again`
+        `- Forked from nana-old.`
       )
       .setTimestamp();
     msg.channel.send(embed);

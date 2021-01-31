@@ -1,6 +1,6 @@
 # nHentai Discord Bot (nHDBot)
 
-nHentai Discord Bot, forked from nana-old.
+nHentai Discord Bot, forked from [nana-old](https://github.com/masami45/nana-old).
 [Join Discord Server](https://discord.gg/wm6V3cT)
 
 ## Hosted bot
