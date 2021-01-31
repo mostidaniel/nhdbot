@@ -5,7 +5,7 @@ nHentai Discord Bot, forked from nana-old.
 
 ## Hosted bot
 I am hosting the bot for a limited time.
-Please use this link to [invite the bot.](https://discordapp.com/oauth2/authorize?client_id=805014850878963725&scope=bot&permissions=8)
+Please use [this link to invite the bot.](https://discordapp.com/oauth2/authorize?client_id=805014850878963725&scope=bot&permissions=8)
 
 ## Self Host
 1. Clone this repo
