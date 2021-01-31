@@ -23,7 +23,7 @@ exports.run = async (client, msg, args, color) => {
 - ${PREFIX}search \`<Query> [Language]\` -- Search nHentai site
 - ${PREFIX}donate -- Showing donate page`
       )
-      .setFooter(`Nana V${client.version} || <> = required, [] = optional`)
+      .setFooter(`${BOTNAME} V${client.version} || <> = required, [] = optional`)
       .addField(
         "Changelogs",
         `- Forked from nana-old.`
