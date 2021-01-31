@@ -1,6 +1,6 @@
 const { version, MessageEmbed } = require("discord.js");
 const pkg = require("../package.json");
-const botInfo = require("../config.json");
+const { BOTNAME } = require("../config.json");
 
 exports.run = async (client, msg, args, color) => {
   const uptime = client.util.parseDur(client.uptime);
@@ -10,7 +10,7 @@ exports.run = async (client, msg, args, color) => {
   const servers = client.guilds.cache.size;
 
   msg.channel.send(`\`\`\`asciidoc
-Bot Name   :: ${botInfo.BOTNAME}
+Bot Name   :: ${BOTNAME}
 Mem. Usage :: ${Math.floor(process.memoryUsage().heapUsed / 1048576)} MB
 Uptime     :: ${uptime}
 WS Ping    :: ${client.ws.ping}ms

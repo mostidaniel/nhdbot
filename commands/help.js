@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const { PREFIX, BOTNAME, SERVER_INV } = require("../config.json");
+const { PREFIX, BOTNAME, SERVER_INV, CLIENT_ID, BOTPERMS } = require("../config.json");
 
 exports.run = async (client, msg, args, color) => {
   const app = await client.fetchApplication();
@@ -9,7 +9,7 @@ exports.run = async (client, msg, args, color) => {
       .setColor(color)
       .setTitle(BOTNAME+" Help Page")
       .setDescription(
-        BOTNAME+` can help you to directly read doujinshi on nHentai from your Discord channel, you can invite me with [This Link](https://discordapp.com/oauth2/authorize?client_id=805014850878963725&scope=bot&permissions=8) or [Join my Server](https://discord.gg/${SERVER_INV})`
+        `${BOTNAME} can help you to directly read doujinshi on nHentai from your Discord channel. You can invite me to your server with [this link](https://discordapp.com/oauth2/authorize?client_id=${CLIENT_ID}&scope=bot&permissions=${BOTPERMS}) or you can also [join my server](https://discord.gg/${SERVER_INV}).`
       )
       .addField(
         "Command list",
@@ -26,7 +26,7 @@ exports.run = async (client, msg, args, color) => {
       .setFooter(`${BOTNAME} V${client.version} || <> = required, [] = optional`)
       .addField(
         "Changelogs",
-        `- Forked from nana-old.`
+        `- Added some stuff.`
       )
       .setTimestamp();
     msg.channel.send(embed);

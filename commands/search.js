@@ -1,5 +1,6 @@
 const nHentaiAPI = require("nana-api");
 let api = new nHentaiAPI();
+const { PREFIX } = require("../config.json");
 
 exports.run = async (client, msg, args, color) => {
   if (!msg.channel.nsfw)
@@ -22,7 +23,7 @@ exports.run = async (client, msg, args, color) => {
   let patt = /^\d+$/;
   if (patt.test(search))
     return msg.channel.send(
-      `You can use \`nh read ${search}\` to search with ID`
+      `You can use \`${PREFIX} read ${search}\` to search with ID`
     );
 
   let lang = input[1];

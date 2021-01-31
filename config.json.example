@@ -5,5 +5,7 @@
   "OWNERS": ["YOUR_USER_ID"],
   "LANG": ["english", "chinese", "japanese"],
   "BOTNAME": "nHDBot",
-  "SERVER_INV": "wm6V3cT"
+  "SERVER_INV": "wm6V3cT",
+  "CLIENT_ID": "CLIENT_ID_HERE",
+  "BOTPERMS": "8"
 }

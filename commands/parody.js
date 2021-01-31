@@ -1,5 +1,6 @@
 const nHentaiAPI = require("nana-api");
 let api = new nHentaiAPI();
+const { PREFIX } = require("../config.json");
 
 exports.run = async (client, msg, args, color) => {
   if (!msg.channel.nsfw)
@@ -9,7 +10,7 @@ exports.run = async (client, msg, args, color) => {
   if (!args[0])
     return msg.channel
       .send(
-        `the command you are using is incorrect\nExample: \`nh parody <Parody> [language]\``
+        `the command you are using is incorrect\nExample: \`${PREFIX} parody <Parody> [language]\``
       )
       .then(msg => msg.delete({ timeout: 10000 }));
   let nick =
