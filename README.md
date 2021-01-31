@@ -17,7 +17,7 @@ Please use [this link](https://discordapp.com/oauth2/authorize?client_id=8050148
 
 ## Q&A
 **Why can't I install this? It shows up some error.**\
-Make sure that you're using Node v12.x. I might change this in the future to support latest versions. (I have changed the package.json to enable this but it is still untested.)
+Make sure that you're using Node v12.x or newer.
 
 **How do I set it up with pm2?**\
 You can view [this StackOverflow article](https://stackoverflow.com/questions/31579509/can-pm2-run-an-npm-start-script) for more information.
