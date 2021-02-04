@@ -1,4 +1,4 @@
-\# nHentai Discord Bot (nHDBot)
+# nHentai Discord Bot (nHDBot)
 
 nHentai Discord Bot, forked from [nana-old](https://github.com/masami45/nana-old).\
 If you want to request help or new features, be sure to [join Discord Server](https://discord.gg/wm6V3cT)!
@@ -27,7 +27,7 @@ Please view [this StackOverflow article](https://stackoverflow.com/questions/315
 **How do I update this if there is a new release?**\
 Just use the `git pull` command in the cloned repository directory.
 
-**I received an error saying somewhere along the lines of `cannot find module sqlite3.node`**\
+**I received an error saying somewhere along the lines of `cannot find module sqlite3.node`**.\
 Please uninstall sqlite from npm and reinstall it using this command: `npm install sqlite3 --build-from-source`.\
 Please view [this StackOverflow article](https://stackoverflow.com/questions/20221825/node-js-says-it-cant-load-sqlite3-module-but-does-anyway) for more information.
 
