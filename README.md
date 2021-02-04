@@ -13,7 +13,7 @@ Please use [this link](https://discordapp.com/oauth2/authorize?client_id=8050148
 3. Modify the `config.json` file.
 4. Do `npm install` or `pnpm install` or `yarn install`.
 5. Do `npm start` or `pnpm start` or `yarn start`. (See Q&A below if you wish to set it up with pm2)
-6. Need help? [Join Discord Server](https://discord.gg/wm6V3cT) or DM `mostidaniel!#1010`.
+6. Need help? [Join Discord Server](https://discord.gg/wm6V3cT) or DM `mostidaniel!#1010`.\
 If you have difficulties installing the program, please install `build-essential` and install the dependencies manually.
 
 ## Q&A
