@@ -31,6 +31,9 @@ Just use the `git pull` command in the cloned repository directory.
 Please uninstall sqlite from npm and reinstall it using this command: `npm install sqlite3 --build-from-source`.\
 Please view [this StackOverflow article](https://stackoverflow.com/questions/20221825/node-js-says-it-cant-load-sqlite3-module-but-does-anyway) for more information.
 
-## Differences between nHDBot and Nana (nana-old)
+## Differences between nHDBot and Nana ([nana-old](https://github.com/masami45/nana-old))
 1. You can customize server invite link and bot name.
 2. Custom prefix is reflected in all appropriate places.
+
+## Support the original author!
+Please support the original author [here](https://github.com/masami45/nana-old)!
